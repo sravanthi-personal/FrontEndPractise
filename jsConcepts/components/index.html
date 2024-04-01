@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web components example</title>
+    <style>
+        h3{
+            color:purple;
+        }
+    </style>
+</head>
+<body>
+    <h3>hello world!</h3>
+
+    <!-- <user-card></user-card> -->
+
+    <user-card name="sravanthi" avatar="https://avatar.anywhere.app/files/img/fyVBLlSRTO9T/2021-01-01-15-16-33-797-original-2-copy-2.jpg">
+        <div slot="email">sravanthi@gmail.com</div>
+        <div slot="phone">123456778</div>
+    </user-card>
+
+    <user-card name="dummy" avatar="https://storage.googleapis.com/live-yoco/user.png">
+        <div slot="email">dummy@gmail.com</div>
+        <div slot="phone">098765431</div>
+    </user-card>
+
+
+    <script src="userCard.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,20 @@
+
+A closures is a mechanism that allows the inner function to remember the 
+outer scope variables when it was defined, even after the outer function has returned. 
+
+The closure has three scope chains :
+
+1) It can access its own scope means variables defined between its curly brackets({}).
+2) It can access the outer function's variables.
+3) It can access the global variables. 
+
+const outer = () => {
+    var message = "I am outside";
+    const inner = () => {
+        console.log(message);
+    };
+    return inner;
+};
+
+const innerFunc = outer();
+innerFunc();
